@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 100px;
+			background-color: hotpink;
+			display: inline-block;
+		}
+
+		.two {
+			background-color: purple;
+			/*相对定位，以元素自己来进行移动，选元素左上角为基点，无论元素是否移动，元素会占据原来的空间*/
+			position: relative; 
+			left: 30px; /*往右边偏移30px*/
+			top: 100px; /*往下边偏移100px;*/
+		}
+	</style>
+</head>
+<body>
+
+	<div></div>
+	<div class="two"></div>
+	<div></div>
+	
+</body>
+</html>

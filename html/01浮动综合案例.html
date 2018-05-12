@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <style type="text/css">
+	 	* {
+	 		margin: 0;
+		 	padding: 0;
+	 	}
+		
+		.topmenu {
+			height: 60px;
+			border: 1px solid red;
+			background-color: #777777;
+		}
+		.content {
+			height: 500px;
+			border: 1px solid green;
+		}
+		
+		.footer {
+			height: 70px;
+			border: 1px solid blue;
+		}
+		
+		ul li {
+			list-style: none;
+		}
+		
+		.topmenu li {
+			display: inline-block; /*转换为行内块元素*/
+		}
+
+		li a {
+			padding: 20px;	/*内边距*/
+			line-height: 60px;	/*让超链接垂直居中*/
+			text-decoration: none;
+		}
+
+		.topmenu li a:link {
+			color: white;
+		}
+
+		.topmenu .index a:link {
+			background-color: #4CAF50;
+		}
+
+		.topmenu li a:hover {
+			background-color: #222;
+		}
+
+		.float-l {
+			float: left;
+		}
+
+		.sidemenu {
+			width: 240px;
+			height: 500px;
+			border: 1px solid red;
+		}
+
+		.sidemenu li {
+			width: 200px;
+			height: 40px;
+			background-color: #EEEEEE;
+			margin: 5px 20px 0;
+			padding: 10px;
+		}
+		.sidemenu li a {
+			line-height: 40px;
+			display: block;
+			width: 200px;
+		}
+
+		.sidemenu li.single {
+			color: white;
+			background-color: #008CBA;
+		}
+
+		.sidemenu li a:hover {
+			background-color: #222;
+		}
+
+		.content {
+			width: 620px;
+			height: 500px;
+			border: 1px solid blue;
+		}
+
+		.footer {
+			clear: both;
+		}
+
+
+	 </style>
+
+</head>
+<body>
+	<!-- 顶部导航栏 -->
+	<div class="topmenu">
+		<ul>
+			<li class="index"><a href="#">主页</a></li>
+			<li><a href="#">新闻</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+		
+
+	<!-- 中间的主体区域 -->
+	<div class="bainbody">
+		<!-- 左侧导航栏 -->
+		<div class="sidemenu float-l">
+			<ul>
+				<li><a href="#">HTML</a></li>
+				<li class="single"><a href="#">CSS</a></li>
+				<li><a href="#">JavaScript</a></li>
+				<li><a href="#">Node.js</a></li>
+				<li><a href="#">React.js</a></li>
+				<li><a href="#">Vue.js</a></li>
+				<li><a href="#">小程序</a></li>
+			</ul>			
+		</div >
+
+		<!-- 右侧的内容区 -->
+		<div class="content float-l">
+			
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer">
+		
+	</div>
+	
+</body>
+</html>

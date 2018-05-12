@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		* {
+			margin: 10px auto;
+		}
+
+		/*平移动画*/
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+		div:hover {
+			transition: all 0.5s; /*设置动画的过渡*/
+			/*transform: translate(100px); 水平动画*/
+			/*transform: translate(0, 50px); 垂直动画*/
+			transform: translate(100px, 50px); /*垂直加水平动画*/
+
+		}
+
+		/*旋转动画*/
+		p {
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			transform-origin: right bottom;/*设置旋转动画的旋转中心点*/
+
+		}
+		p:hover {
+			transition: all 0.8s;/*设置动画的过渡*/
+			transform: rotate(-60deg);/*设置旋转的角度，要加deg单位*/
+		}
+
+		/*缩放动画*/
+		span {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			display: block;
+			transform-origin: left top;/*设置缩放动画的缩放中心点*/
+		}
+		span:hover {
+			transition: all 0.8s;/*设置动画的过渡*/
+			transform: scale(2,3);
+		}
+
+		/*扭曲动画*/
+		section {
+			width: 100px;
+			height: 100px;
+			background-color: hotpink;
+			transform-origin: left bottom;
+		}
+		section:hover {
+			transition: all 1s;
+			/*transform: skewX(30deg); 在X轴方向上变换*/ 
+			/*transform: skewY(30deg); 在Y轴方向上变换*/
+			transform: skew(30deg, 30deg);/*在X轴和Y轴方向同时变换*/
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div></div>
+
+	<p></p>
+
+	<span></span>
+
+	<section></section>
+
+	
+</body>
+</html>
